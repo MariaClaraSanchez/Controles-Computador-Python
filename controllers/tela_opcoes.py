@@ -6,7 +6,7 @@ class Tela:
         pass
 
     def opcao_user(self) -> str:
-        opcao = pyautogui.confirm('Clique no botão desejado', 
+        opcao = pyautogui.confirm('Clique no aplicativo que deseja abrir', 
                     buttons = ['Discord', 'Microsoft Teams','Outlook','Visual Studio Code'
                     'Google Chrome','PowerPoint','Excel','Word',
                     'Sophos Connect','AnyDesk','UiPath Studio'])

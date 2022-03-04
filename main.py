@@ -1,14 +1,14 @@
-from controllers.tela_opcoes import Opcoes
+from controllers.tela_opcoes import Tela
 from controllers.acessar_locais import Locais
 
 def start():
     
-    opcao = Opcoes()
-    op = opcao.opcao_user()
+    opcao_tela_escolhida = Tela()
+    op = opcao_tela_escolhida.opcao_user()
 
-    if(op == 'Discord'):
-        local = Locais()
-        local.discord()
+    local_acessado = Locais(op)
+    local_acessado.escolha()
+    
     #print(opcao.opcao_user())
     
 
